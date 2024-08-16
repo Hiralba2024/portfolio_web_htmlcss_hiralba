@@ -1,0 +1,117 @@
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    from { top: -50px; opacity: 0; }
+    to { top: 0; opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideInBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.hidden {
+    opacity: 0;
+}
+
+.sidebar{
+    animation: slideIn 2s ease-in-out;
+}
+
+
+#about-me:target .img-card,
+#about-me:target .img-card1 {
+    animation: fadeIn 2s ease-in-out; 
+}
+
+#about-me:target .about h1,
+#about-me:target .about p {
+    animation: slideIn 2s ease-in-out;
+}
+
+#about-me:target .text h2,
+#about-me:target .text p,
+#about-me:target .read {
+    animation: slideInRight 2s ease-in-out;
+}
+
+#about-me:target .text1 h2,
+#about-me:target .text1 p,
+#about-me:target .read1 {
+    animation: slideInLeft 2s ease-in-out;
+}
+
+
+#skills:target .what-skill h2{
+    animation: slideInLeft 2s ease-in-out;
+}
+#skills:target .what-skill p {
+    animation: slideInRight 2s ease-in-out; 
+}
+#skills:target .html-css, 
+#skills:target .custom {
+    animation: slideInLeft 2s ease-in-out;
+}
+
+#skills:target .idea, 
+#skills:target .admin {
+    animation: slideInRight 2s ease-in-out;
+}
+#portfolio:target .work h2{
+    animation: slideInLeft 2s ease-in-out;
+}
+#portfolio:target .work p{
+    animation: slideInRight 2s ease-in-out;
+}
+#portfolio:target .land,
+#portfolio:target .glass,
+#portfolio:target .snow{
+    animation: slideInRight 2s ease-in-out;
+}
+#portfolio:target .house,
+#portfolio:target .run, 
+#portfolio:target .ocen{
+    animation: slideInLeft 2s ease-in-out;
+}
+#contact:target .contact-me h2{
+    animation: slideInLeft 2s ease-in-out;
+}
+#contact:target .contact-me p{
+    animation: slideInRight 2s ease-in-out;
+}
+#contact:target .name{
+    animation: slideInLeft 2s ease-in-out;
+}
+#contact:target .email{
+    animation: slideInRight 2s ease-in-out;
+}
+#contact:target .sub,
+#contact:target .message,
+#contact:target .sendbtn{
+    animation: slideInBottom 2s ease-in-out;
+}
